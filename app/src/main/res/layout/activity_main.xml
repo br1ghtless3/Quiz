@@ -131,19 +131,18 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startquiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="НАЧАТЬ!"
             android:layout_below="@+id/line_2"
-            android:layout_marginTop="50dp"
             android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="50dp"
-            android:textStyle="normal"
+            android:background="@drawable/round_button"
+            android:text="НАЧАТЬ!"
             android:textColor="#CC000000"
             android:textSize="20sp"
-            android:id="@+id/startquiz"
-            android:background="@drawable/round_button"
-            />
+            android:textStyle="normal" />
 
 
 
