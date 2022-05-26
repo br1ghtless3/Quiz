@@ -64,24 +64,22 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
         startquiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(selectedTopic.isEmpty()){
-                    Toast.makeText(MainActivity.this, "Выберите тему", Toast.LENGTH_SHORT).show();
-                } else{
+
+                if (selectedTopic.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Выберите викторину", Toast.LENGTH_SHORT).show();
+                } else {
                     Intent intent = new Intent(MainActivity.this, QuizAct.class);
                     intent.putExtra("selectedTopic", selectedTopic);
-
                     startActivity(intent);
                     finish();
                 }
 
-
-
             }
         });
-
 
     }
 }
