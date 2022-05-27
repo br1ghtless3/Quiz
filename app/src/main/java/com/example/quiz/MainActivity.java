@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         final LinearLayout disney = findViewById(R.id.disney);
 
         final Button startquiz = findViewById(R.id.startquiz);
+        final Button infoaboutme = findViewById(R.id.infoaboutme);
+        final Button pravila = findViewById(R.id.pravila);
 
 
 
@@ -78,6 +80,28 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                 }
 
+            }
+        });
+
+        infoaboutme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                    Intent intent = new Intent(MainActivity.this, InfoAboutMe.class);
+                    intent.putExtra("selectedTopic", selectedTopic);
+                    startActivity(intent);
+                    finish();
+            }
+        });
+
+        pravila.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, Pravila.class);
+                intent.putExtra("selectedTopic", selectedTopic);
+                startActivity(intent);
+                finish();
             }
         });
 
