@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background4"
+        android:orientation="vertical"
+        tools:context=".InfoAboutMe">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/strelka" />
+
+        <TextView
+                android:id="@+id/nametopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Информация о создателе"
+                android:textColor="#CC000000"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/quis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:padding="20dp"
+            android:text="Приветствую! Меня зовут Дарья, учусь в 9 классе. Немного подував, решила
+взять тему викторины по мультфильмам, ведь так хочется отвлечься после тяжелого дня и отдохнуть. Либо же
+занять младшего брата или сестру на время, хоть и не большое. Удачной игры!"
+            android:textColor="#CC000000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+</LinearLayout>
