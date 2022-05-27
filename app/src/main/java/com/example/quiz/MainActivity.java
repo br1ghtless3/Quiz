@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         sssr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                selectedTopic = "sssr";
+                selectedTopic = "Советсвкие мультфильмыr";
                 sssr.setBackgroundResource(R.drawable.round_select_topik);
 
                 winx.setBackgroundResource(R.drawable.round_back_white_10);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         winx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                selectedTopic = "winx";
+                selectedTopic = "Winx";
                 winx.setBackgroundResource(R.drawable.round_select_topik);
 
                 sssr.setBackgroundResource(R.drawable.round_back_white_10);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         disney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                selectedTopic = "disney";
+                selectedTopic = "Disney";
                 disney.setBackgroundResource(R.drawable.round_select_topik);
 
                 winx.setBackgroundResource(R.drawable.round_back_white_10);
