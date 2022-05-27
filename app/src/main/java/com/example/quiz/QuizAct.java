@@ -29,7 +29,7 @@ public class QuizAct extends AppCompatActivity {
     private Timer qtimer;
 
     private int seconds = 0;
-    private int minuts = 1;
+    private int minuts = 5;
 
     private List<QuestionList> questionLists;
 
@@ -312,7 +312,7 @@ public class QuizAct extends AppCompatActivity {
             threeotvet.setText(questionLists.get(curQuestNow).getThreeotvet());
             foureotvet.setText(questionLists.get(curQuestNow).getFoureotvet());
         } else{
-            if (correctAns() >= 2 && incorrectAns() <= 1) {
+            if (correctAns() >= 6 && incorrectAns() <= 1) {
                 Intent intent = new Intent(QuizAct.this, QuizResults3.class);
                 intent.putExtra("correct", correctAns());
                 intent.putExtra("incorrect", incorrectAns());
@@ -320,7 +320,7 @@ public class QuizAct extends AppCompatActivity {
 
                 startActivity(intent);
                 finish();
-            } else if (correctAns() == 1 && incorrectAns() >= 1) {
+            } else if (correctAns() >= 4 && correctAns() < 6 && incorrectAns() >= 1) {
                 Intent intent = new Intent(QuizAct.this, QuizResults1.class);
                 intent.putExtra("correct", correctAns());
                 intent.putExtra("incorrect", incorrectAns());
