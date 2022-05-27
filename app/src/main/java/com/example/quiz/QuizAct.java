@@ -180,12 +180,9 @@ public class QuizAct extends AppCompatActivity {
                     qtimer.purge();
                     qtimer.cancel();
 
-                    Toast.makeText(QuizAct.this, "Время вышло", Toast.LENGTH_SHORT).show();
-
                     Intent intent = new Intent(QuizAct.this, QuizResults.class);
                     intent.putExtra("correct", correctAns());
                     intent.putExtra("incorrect", incorrectAns());
-
 
                     startActivity(intent);
                     finish();
@@ -315,14 +312,31 @@ public class QuizAct extends AppCompatActivity {
             threeotvet.setText(questionLists.get(curQuestNow).getThreeotvet());
             foureotvet.setText(questionLists.get(curQuestNow).getFoureotvet());
         } else{
+            if (correctAns() >= 2 && incorrectAns() <= 1) {
+                Intent intent = new Intent(QuizAct.this, QuizResults3.class);
+                intent.putExtra("correct", correctAns());
+                intent.putExtra("incorrect", incorrectAns());
 
-            Intent intent = new Intent(QuizAct.this, QuizResults.class);
-            intent.putExtra("correct", correctAns());
-            intent.putExtra("incorrect", incorrectAns());
+
+                startActivity(intent);
+                finish();
+            } else if (correctAns() == 1 && incorrectAns() >= 1) {
+                Intent intent = new Intent(QuizAct.this, QuizResults1.class);
+                intent.putExtra("correct", correctAns());
+                intent.putExtra("incorrect", incorrectAns());
 
 
-            startActivity(intent);
-            finish();
+                startActivity(intent);
+                finish();
+            } else {
+                Intent intent = new Intent(QuizAct.this, QuizResults2.class);
+                intent.putExtra("correct", correctAns());
+                intent.putExtra("incorrect", incorrectAns());
+
+
+                startActivity(intent);
+                finish();
+            }
         }
     }
 }
