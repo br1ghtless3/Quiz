@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background4"
+        android:background="@drawable/info"
         android:orientation="vertical"
         tools:context=".Pravila">
 
@@ -27,42 +27,70 @@
                 android:layout_centerInParent="true"
                 android:text="Правила викорины"
                 android:textColor="#CC000000"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 android:textStyle="normal" />
 
     </RelativeLayout>
 
     <TextView
-            android:id="@+id/question"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_back_white_10"
-            android:elevation="1dp"
-            android:gravity="center"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:text=""
-            android:textColor="#CC000000"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            />
-
-    <TextView
             android:id="@+id/quis1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="-15dp"
-            android:background="@drawable/round_back_light"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="-35dp"
             android:gravity="center"
             android:minHeight="100dp"
             android:padding="20dp"
-            android:text="Правила игры просты"
+            android:text="Приветсвую! Ниже описаны правила викторины."
             android:textColor="#CC000000"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="normal" />
+
+    <TextView
+            android:id="@+id/quis2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="-40dp"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:padding="20dp"
+            android:text="На главном экране есь выбор из 3-х тем, выбирая любую стоит нажать на кнопку 'НАЧАТЬ', находящуюся внизу экранаю В любой момент игры можно выйти из нее, но результат не сохраниться и не будет показан пользователю."
+            android:textColor="#CC000000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    <TextView
+            android:id="@+id/quis3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="-40dp"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:padding="20dp"
+            android:text="Во время викторины сячитаются количество правильных и не правильных ответов пользователя. в зависимости от них будет выведена на экран разная картинка с результатами. После прохождения викторины, можно пройти ее вновь, нажав на кнопку 'ИГРАТЬ ЕЩЕ РАЗ', которая находится в ниэней части экрана."
+            android:textColor="#CC000000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    <TextView
+            android:id="@+id/quis4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="-40dp"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:padding="20dp"
+            android:text="Также присутсвует таймер, который ведет обратный отсчет. При окончании времени викторина прекращается, и пользевателя переносит на экран с результатами."
+            android:textColor="#CC000000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
 
 </LinearLayout>
