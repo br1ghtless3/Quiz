@@ -10,6 +10,21 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Quiz">
         <activity
+                android:name=".Pravila"
+                android:exported="true" />
+        <activity
+                android:name=".InfoAboutMe"
+                android:exported="true" />
+        <activity
+                android:name=".QuizResults3"
+                android:exported="true" />
+        <activity
+                android:name=".QuizResults2"
+                android:exported="true" />
+        <activity
+                android:name=".QuizResults1"
+                android:exported="true" />
+        <activity
                 android:name=".QuizResults"
                 android:exported="true" />
         <activity
